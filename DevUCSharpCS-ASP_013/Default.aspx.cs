@@ -11,12 +11,12 @@ namespace DevUCSharpCS_ASP_013
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            comparisonTypeLabel.Text = "equal to";
+            comparisonTypeLabel.Text = " not equal to";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            resultLabel.Text = (firstTextBox.Text == secondTextBox.Text) ? "Yes, they're equivalent" : "Nope, not equivalent.";
+            resultLabel.Text = (firstTextBox.Text != secondTextBox.Text) ? "Yes" : "Nope";
         }
     }
 }
