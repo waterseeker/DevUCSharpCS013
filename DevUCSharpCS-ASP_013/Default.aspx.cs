@@ -11,12 +11,16 @@ namespace DevUCSharpCS_ASP_013
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            comparisonTypeLabel.Text = " not equal to";
+            comparisonTypeLabel.Text = "greater than";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            resultLabel.Text = (firstTextBox.Text != secondTextBox.Text) ? "Yes" : "Nope";
+            //int first = int.Parse(firstTextBox.Text);
+            //int second = int.Parse(secondTextBox.Text);
+            //resultLabel.Text = (first > second) ? "Yes" : "No";
+
+            resultLabel.Text = (!checkedCheckBox.Checked) ? "No" : "Yes";
         }
     }
 }

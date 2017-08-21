@@ -15,7 +15,7 @@
 &nbsp;<asp:TextBox ID="secondTextBox" runat="server"></asp:TextBox>
             ?<br />
             <br />
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="I am checked" />
+            <asp:CheckBox ID="checkedCheckBox" runat="server" Text="I am checked" />
             <br />
             <br />
             <asp:Button ID="okButton" runat="server" OnClick="Button1_Click" Text="OK" />
