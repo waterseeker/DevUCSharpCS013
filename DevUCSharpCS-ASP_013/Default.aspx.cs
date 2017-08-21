@@ -24,11 +24,18 @@ namespace DevUCSharpCS_ASP_013
 
             resultLabel.Text = ""; //clear the label
 
+            //if (checkedCheckBox.Checked
+            //    && firstTextBox.Text == "Testy"
+            //    && secondTextBox.Text == "McTestFace")
+            //{
+            //    resultLabel.Text = "Perfect trifecta!";
+            //}
+
             if (checkedCheckBox.Checked
-                && firstTextBox.Text == "Testy"
-                && secondTextBox.Text == "McTestFace")
+    || firstTextBox.Text == "Testy"
+    || secondTextBox.Text == "McTestFace")
             {
-                resultLabel.Text = "Perfect trifecta!";
+                resultLabel.Text = "One out of three ain't bad!";
             }
         }
     }
