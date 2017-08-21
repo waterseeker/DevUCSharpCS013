@@ -31,11 +31,17 @@ namespace DevUCSharpCS_ASP_013
             //    resultLabel.Text = "Perfect trifecta!";
             //}
 
-            if (checkedCheckBox.Checked
-    || firstTextBox.Text == "Testy"
-    || secondTextBox.Text == "McTestFace")
+            //        if (checkedCheckBox.Checked
+            //|| firstTextBox.Text == "Testy"
+            //|| secondTextBox.Text == "McTestFace")
+            //        {
+            //            resultLabel.Text = "One out of three ain't bad!";
+            //        }
+
+            if ((checkedCheckBox.Checked || firstTextBox.Text == "Testy")
+                && secondTextBox.Text == "McTestFace")
             {
-                resultLabel.Text = "One out of three ain't bad!";
+                resultLabel.Text = "Two out of three is better!";
             }
         }
     }
