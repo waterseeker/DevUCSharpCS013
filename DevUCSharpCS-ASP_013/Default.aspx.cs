@@ -20,7 +20,16 @@ namespace DevUCSharpCS_ASP_013
             //int second = int.Parse(secondTextBox.Text);
             //resultLabel.Text = (first > second) ? "Yes" : "No";
 
-            resultLabel.Text = (!checkedCheckBox.Checked) ? "No" : "Yes";
+            //resultLabel.Text = (!checkedCheckBox.Checked) ? "No" : "Yes";
+
+            resultLabel.Text = ""; //clear the label
+
+            if (checkedCheckBox.Checked
+                && firstTextBox.Text == "Testy"
+                && secondTextBox.Text == "McTestFace")
+            {
+                resultLabel.Text = "Perfect trifecta!";
+            }
         }
     }
 }
